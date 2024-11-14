@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="Days">
+    <button onclick="Month()">Check Days</button>
+    <div id="output"></div>
+</body>
+    <script>
+        function Month(){
+            let Month = document.getElementById("Days").value.trim().toLowerCase();
+            if (Month === "january" || Month==="march"|| Month === "may"|| Month==="july"||Month==="august"|| Month==="october"|| Month==="december") {
+               document.getElementById('output').innerHTML = "31 days"
+            } 
+            else if(Month === "September"||Month==="april"||Month==="june"||Month==="november"){
+                document.getElementById('output').innerHTML = "30 days"
+            }
+            
+            else if(Month === "february"){
+                document.getElementById('output').innerHTML = "28 days"
+            }
+            else if(Month==="" ){
+                alert('Pease enter a month')
+            }
+            else {
+                document.getElementById('output').innerHTML = "Invalid Day"
+            }
+        }
+    </script>
+</html>

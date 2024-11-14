@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="text" id="base"> <p>Base</p>
+    <input type="text" id="height"> <p>Height</p>
+    <button onclick="findArea()">Find Area</button>
+    <button onclick="reset()">Reset</button>
+    <p id="answer"></p> -->
+
+    <input type="number" id="num">
+    <button id="up" onclick="numberUp()">Up</button>
+    <button id="down" onclick="numberDown()">Down</button>
+  
+<script>
+
+function numberUp() {
+  let inputValue = Number(document.getElementById('num').value)
+ inputValue = inputValue + 2
+  document.getElementById('num').value = inputValue
+}
+
+function numberDown() {
+    let inputValue = Number(document.getElementById('num').value)
+    inputValue = inputValue - 2
+  document.getElementById('num').value = inputValue
+}
+
+
+
+
+// let Base = document.getElementById('base')
+// let Height = document.getElementById('height')
+
+// function findArea(){
+//     let Area = (0.5 * Base.value * Height.value)
+//     document.getElementById ('answer').innerHTML = Area
+// }
+
+// function reset(){
+//    Base.value = ''
+//    Height.value = ''
+//    answer.innerHTML = ''
+// }
+
+</script>
+</html>

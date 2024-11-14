@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="season">
+    <button onclick="checkSeason()"> check season</button>
+    <div id="display"> </div>
+
+</body>
+</html>
+
+<script>
+   function checkSeason() {
+        // winter summer autumn spring
+        let season = document.getElementById('season').value
+        if (season === 'winter') {
+            display.innerHTML = `<p> this is winter </p>`
+        } else if (season === 'summer') {
+            display.innerHTML = `<p> this is summer</p>`
+
+        } else if (season === 'autumn') {
+            display.innerHTML = `<p> this is autumn</p>`
+
+        } else if (season === 'spring') {
+            display.innerHTML = `<p> this is spring</p>`
+
+        } else {
+            display.innerHTML = `<p> Invalid Input</p>`
+
+        }
+    }
+
+  
+</script>
