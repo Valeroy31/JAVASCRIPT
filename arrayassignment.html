@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //Declare an empty array;
+    const empty = Array()
+    console.log(empty);
+    //Declare an array with more than 5 number of elements
+    const arry = [1,'lol',Boolean, 'Shammah',0,5,{} ]
+    console.log(arry);
+    //Find the length of your array
+    console.log(arry.length);
+
+    //Get the first item, the middle item and the last item of the array
+    //For the first item
+    let loml = arry[0]
+    console.log(loml);
+
+    //For the middle item
+    let lmao = arry[3]
+    console.log(lmao);
+
+    //for the last item
+    let something = arry.length - 1
+    console.log(arry[something]);
+
+    //Declare an array called mixedDataTypes, put different data types in the array and find the length of the array. The array size should be greater than 5
+    let mixedDataTypes = [69, "Hello",null, true,  undefined, " " , {}];
+    console.log( mixedDataTypes.length);
+
+    //Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
+    let itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"];
+
+    //Print the array using console.log()
+    console.log(itCompanies);
+
+    //Print the number of companies in the array
+    console.log(itCompanies.length);
+
+    //Print the first company, middle and last company
+
+    //first company
+    let firstCompany = itCompanies[0]
+    console.log(firstCompany);
+   
+    //middle
+    let middle = itCompanies[Math.floor(itCompanies.length / 2)]
+    console.log(middle);
+
+    //last company
+    let lastCompany = itCompanies.length - 1
+    console.log(itCompanies[lastCompany]);
+
+   // Print out each company
+    itCompanies.forEach(company => {
+    console.log(company);
+    });
+    // let toUpper = company.toUpperCase()
+    // console.log(toUpper); //not working
+
+    //Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
+    let companiesSentence = itCompanies.slice(", ");
+    console.log(companiesSentence + " are big IT companies.");
+
+    //Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
+    let companyToFind = "Apple"; 
+    if (itCompanies.includes(companyToFind)) {
+    console.log(companyToFind + " is found in the array.");
+    } else {
+    console.log(companyToFind + " is not found.");
+}
+    //Filter out companies which have more than one 'o' without the filter method
+    ""
+    //Sort the array using the sort() method
+    let sorted = itCompanies.sort();
+    console.log(sorted);
+
+    //Reverse the array using reverse() method
+    let rev = itCompanies.reverse();
+    console.log(rev);
+    //Slice out the first 3 companies from the array
+    itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"];
+    let sLiceD = itCompanies.slice(0,3)
+    console.log(sLiceD);
+
+    //Slice out the last 3 companies from the array
+    let lastSliced = itCompanies.slice(4,7)
+    console.log(lastSliced);
+
+    //Slice out the middle IT company or companies from the array
+    let middlesliced = itCompanies.slice([Math.floor(itCompanies.length / 2)])
+    console.log(middlesliced);
+
+    //Remove the first IT company from the array
+    let Remfirst = itCompanies.shift();
+    console.log(Remfirst);
+
+    //Remove the last IT company from the array
+    let Remlast = itCompanies.pop()
+    console.log(Remlast);
+    //Remove all IT companies
+    let RemAll = []
+    console.log(RemAll);
+
+    //Exercise: Level 3
+    const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+
+    //Sort the array and find the min and max age
+
+    //Find the median age(one middle item or two middle items divided by two)
+    const middler = ages.sort()
+    const midIndx = middler.length / 2
+    console.log(midIndx);
+//Find the average age(all items divided by number of items)
+    // let AvErg = ages.Math. 
+</script>
+</html>
